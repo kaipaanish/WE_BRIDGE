@@ -1,0 +1,712 @@
+[
+  {
+    "id": "dpiit-recognition",
+    "category": "recognition",
+    "name": "DPIIT Startup Recognition",
+    "oneLiner": "The official 'startup' badge from the Government of India that unlocks most other benefits.",
+    "summary": "DPIIT recognition is the government's official stamp that your company is a startup. It is free, done fully online, and is the gateway to tax breaks, seed funding, easier compliance and more.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": 10,
+      "notes": "Must be a private limited company, LLP or registered partnership, less than 10 years old (VERIFY), with annual turnover under ₹100 crore (VERIFY), working on innovation or improvement of products, processes or services."
+    },
+    "eligibilityPlain": "Any registered Indian company or LLP under 10 years old with turnover below ₹100 crore (VERIFY) that is doing something innovative.",
+    "benefit": "Free official recognition that unlocks income-tax exemption, the Seed Fund Scheme, patent fee rebates, self-certification for labour laws, easier public procurement and faster company winding-up.",
+    "howToApply": [
+      "Incorporate your company, LLP or partnership if you haven't already.",
+      "Create an account on the Startup India portal.",
+      "Fill the recognition application with your company details.",
+      "Write a short note on how your product or service is innovative.",
+      "Upload your certificate of incorporation and submit.",
+      "Receive your DPIIT recognition number by email (usually within days)."
+    ],
+    "documentsRequired": [
+      "Certificate of incorporation / registration",
+      "Company PAN",
+      "Brief write-up or pitch deck describing the innovation",
+      "Director / partner details"
+    ],
+    "deadline": "rolling",
+    "officialUrl": "https://www.startupindia.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["dpiit", "recognition", "national", "free"]
+  },
+  {
+    "id": "maharashtra-state-startup-registration",
+    "category": "recognition",
+    "name": "Maharashtra State Startup Registration (MSInS)",
+    "oneLiner": "Register with Maharashtra's state startup cell to access state-level grants, competitions and support.",
+    "summary": "The Maharashtra State Innovation Society (MSInS) runs the state's startup ecosystem. Registering puts you on the radar for state grants, Startup Week, incubation support and patent reimbursements.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "state": "Maharashtra",
+      "notes": "Meant for startups registered or operating in Maharashtra. Other states run similar cells (e.g. Startup Karnataka, Startup TN) — check your own state's portal (VERIFY)."
+    },
+    "eligibilityPlain": "Startups registered or operating in Maharashtra; other states have equivalent programs on their own portals.",
+    "benefit": "Access to state programs like Maharashtra Startup Week, patent cost reimbursement (VERIFY), incubation tie-ups and state pitch events.",
+    "howToApply": [
+      "Go to the MSInS website and create an account.",
+      "Fill in your startup profile and sector details.",
+      "Upload incorporation and founder details.",
+      "Watch for open calls (Startup Week, grant challenges) and apply to them from the same account."
+    ],
+    "documentsRequired": [
+      "Certificate of incorporation",
+      "Founder KYC details",
+      "Brief description of the startup"
+    ],
+    "deadline": "rolling",
+    "officialUrl": "https://www.msins.in",
+    "sourceVerifiedDate": null,
+    "tags": ["state", "maharashtra", "recognition"]
+  },
+  {
+    "id": "tax-holiday-80iac",
+    "category": "benefit",
+    "name": "Income Tax Holiday (Section 80-IAC)",
+    "oneLiner": "Pay zero income tax on profits for 3 years out of your first 10.",
+    "summary": "DPIIT-recognised startups can apply for a 100% income-tax deduction on profits for any 3 consecutive years within their first 10 years (VERIFY). You choose the 3 years, so most startups use it once they become profitable.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": true,
+      "maxAgeYears": 10,
+      "notes": "Requires DPIIT recognition and approval from the Inter-Ministerial Board (IMB). Company must be incorporated before the current cutoff date announced in the Finance Act (VERIFY)."
+    },
+    "eligibilityPlain": "DPIIT-recognised startups under 10 years old, approved by the Inter-Ministerial Board — you pick which 3 profitable years to exempt.",
+    "benefit": "100% deduction of profits from income tax for 3 consecutive years of your choice within the first 10 years (VERIFY).",
+    "howToApply": [
+      "Get DPIIT recognition first.",
+      "Log in to the Startup India portal and open the 80-IAC application.",
+      "Submit financial statements, pitch deck and a video link if asked (VERIFY).",
+      "Wait for the Inter-Ministerial Board to review and approve.",
+      "Claim the exemption in your income-tax return for the chosen years with your CA."
+    ],
+    "documentsRequired": [
+      "DPIIT recognition certificate",
+      "Annual accounts / financial statements",
+      "Pitch deck",
+      "Board resolution (if applicable)"
+    ],
+    "deadline": "rolling (incorporation-date cutoff applies — VERIFY)",
+    "officialUrl": "https://www.startupindia.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["tax", "dpiit", "80-iac", "exemption"]
+  },
+  {
+    "id": "angel-tax-exemption",
+    "category": "benefit",
+    "name": "Angel Tax Exemption (Section 56(2)(viib))",
+    "oneLiner": "Raise money from angels above fair value without it being taxed as income.",
+    "summary": "Angel tax used to tax the premium startups received when issuing shares above fair market value. DPIIT-recognised startups could file a declaration to be exempt. Note: the Finance Act 2024 abolished angel tax for shares issued from FY 2025-26 onward (VERIFY) — check current applicability before relying on this.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": true,
+      "maxAgeYears": 10,
+      "notes": "Historically required DPIIT recognition and aggregate paid-up capital plus share premium under ₹25 crore (VERIFY). Largely superseded by the 2024 abolition of angel tax (VERIFY)."
+    },
+    "eligibilityPlain": "DPIIT-recognised startups raising money at a premium — though angel tax itself was abolished from FY 2025-26 (VERIFY).",
+    "benefit": "Share premium received from investors is not taxed as 'income from other sources'.",
+    "howToApply": [
+      "Get DPIIT recognition.",
+      "Confirm with your CA whether angel tax still applies to your share issue (VERIFY).",
+      "If applicable, file the exemption declaration (Form 2) on the Startup India portal.",
+      "Keep the acknowledgement for your tax records."
+    ],
+    "documentsRequired": [
+      "DPIIT recognition certificate",
+      "Details of share issue and investors",
+      "Declaration form"
+    ],
+    "deadline": "rolling",
+    "officialUrl": "https://www.startupindia.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["tax", "angel-tax", "dpiit", "fundraising"]
+  },
+  {
+    "id": "sipp-patent-support",
+    "category": "benefit",
+    "name": "Patent & Trademark Support (SIPP)",
+    "oneLiner": "Get big rebates on patent and trademark fees, plus a free government-paid facilitator.",
+    "summary": "The Startups Intellectual Property Protection (SIPP) scheme makes protecting your idea affordable. Startups get an 80% rebate on patent filing fees and 50% on trademarks (VERIFY), and the government pays the facilitator who drafts and files for you.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": true,
+      "maxAgeYears": null,
+      "notes": "Requires DPIIT recognition. Facilitators are empanelled by the patent office; you still pay statutory fees at the rebated rate (VERIFY)."
+    },
+    "eligibilityPlain": "Any DPIIT-recognised startup filing patents, trademarks or designs in India.",
+    "benefit": "80% rebate on patent fees, 50% on trademark fees (VERIFY), free facilitator services for drafting and prosecution, and expedited examination for startups.",
+    "howToApply": [
+      "Get DPIIT recognition.",
+      "Pick an empanelled facilitator from the IP India list.",
+      "Work with the facilitator to draft your patent/trademark application.",
+      "File with the rebated startup fee — the facilitator's charges are paid by the government."
+    ],
+    "documentsRequired": [
+      "DPIIT recognition certificate",
+      "Invention disclosure / brand details",
+      "Founder and company KYC"
+    ],
+    "deadline": "rolling",
+    "officialUrl": "https://www.ipindia.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["ipr", "patent", "trademark", "dpiit"]
+  },
+  {
+    "id": "sisfs",
+    "category": "funding",
+    "name": "Startup India Seed Fund Scheme (SISFS)",
+    "oneLiner": "Up to ₹20 lakh grant for validation and up to ₹50 lakh for market entry, via incubators.",
+    "summary": "SISFS gives very early startups money before angels or VCs will. Approved incubators disburse up to ₹20 lakh as a grant for proof of concept and up to ₹50 lakh as convertible debentures or debt for going to market (VERIFY).",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": true,
+      "maxAgeYears": 2,
+      "notes": "DPIIT-recognised startups incorporated not more than 2 years ago at the time of application (VERIFY). Must not have received more than ₹10 lakh from other government schemes (VERIFY)."
+    },
+    "eligibilityPlain": "DPIIT-recognised startups less than 2 years old (VERIFY) with a product or idea that needs proof-of-concept or launch money.",
+    "benefit": "Up to ₹20 lakh grant for prototype/validation plus up to ₹50 lakh convertible debenture/debt for commercialisation (VERIFY), through an incubator that also mentors you.",
+    "howToApply": [
+      "Get DPIIT recognition.",
+      "Create an account on the Seed Fund portal.",
+      "Apply to up to 3 incubators of your choice through the portal (VERIFY).",
+      "Pitch to the incubator's selection committee if shortlisted.",
+      "Sign the agreement and receive funds in milestone-based tranches."
+    ],
+    "documentsRequired": [
+      "DPIIT recognition certificate",
+      "Pitch deck",
+      "Company incorporation documents",
+      "Founder details and shareholding pattern"
+    ],
+    "deadline": "rolling (incubators review applications in cycles — VERIFY)",
+    "officialUrl": "https://seedfund.startupindia.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["funding", "grant", "seed", "dpiit", "incubator"]
+  },
+  {
+    "id": "fund-of-funds",
+    "category": "funding",
+    "name": "Fund of Funds for Startups (FFS)",
+    "oneLiner": "A ₹10,000 crore government pool that invests in VC funds, which then invest in startups like yours.",
+    "summary": "The government doesn't invest in startups directly through FFS — it puts money into SEBI-registered venture funds via SIDBI, and those funds invest in Indian startups. If you're raising a VC round, funds backed by FFS are a good target list.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": true,
+      "maxAgeYears": null,
+      "notes": "You don't apply to FFS directly. Supported funds must invest in DPIIT-recognisable Indian startups (VERIFY). Approach the portfolio VC funds (AIFs) instead."
+    },
+    "eligibilityPlain": "Startups raising equity from venture funds — you pitch to FFS-backed VC funds, not to the government.",
+    "benefit": "Indirect access to a ₹10,000 crore (VERIFY) capital pool through the VC funds SIDBI has backed.",
+    "howToApply": [
+      "Prepare a fundraise-ready pitch deck and data room.",
+      "Find AIFs/VC funds supported by SIDBI's Fund of Funds (list on SIDBI's venture capital site).",
+      "Pitch to those funds like any VC — FFS backing just means they must deploy into Indian startups.",
+      "Negotiate and close your round with the fund directly."
+    ],
+    "documentsRequired": [
+      "Pitch deck",
+      "Financial model",
+      "Cap table",
+      "Incorporation documents"
+    ],
+    "deadline": "rolling",
+    "officialUrl": "https://www.sidbivcf.in",
+    "sourceVerifiedDate": null,
+    "tags": ["funding", "equity", "vc", "sidbi"]
+  },
+  {
+    "id": "cgss",
+    "category": "funding",
+    "name": "Credit Guarantee Scheme for Startups (CGSS)",
+    "oneLiner": "Get bank loans without collateral — the government guarantees them for you.",
+    "summary": "Banks usually demand property or fixed deposits as security. Under CGSS the government guarantees loans to DPIIT-recognised startups up to ₹10 crore (VERIFY), so lenders can give you working capital or term loans without collateral.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": true,
+      "maxAgeYears": null,
+      "notes": "DPIIT-recognised startups with stable revenue as assessed by the lender; not in default to any lender and not an NPA (VERIFY)."
+    },
+    "eligibilityPlain": "DPIIT-recognised startups that a bank or NBFC is willing to lend to — the guarantee replaces collateral.",
+    "benefit": "Collateral-free credit (term loans, working capital, venture debt) with government guarantee cover up to ₹10 crore per borrower (VERIFY).",
+    "howToApply": [
+      "Get DPIIT recognition.",
+      "Approach a bank/NBFC/AIF that is a registered member lender under CGSS.",
+      "Apply for the loan and ask the lender to cover it under CGSS.",
+      "The lender applies for the guarantee through NCGTC — you don't apply to NCGTC yourself.",
+      "Service the loan normally once sanctioned."
+    ],
+    "documentsRequired": [
+      "DPIIT recognition certificate",
+      "Business financials / bank statements",
+      "Loan application per the lender's requirements"
+    ],
+    "deadline": "rolling",
+    "officialUrl": "https://www.ncgtc.in",
+    "sourceVerifiedDate": null,
+    "tags": ["funding", "debt", "loan", "collateral-free", "dpiit"]
+  },
+  {
+    "id": "elevate-karnataka",
+    "category": "funding",
+    "name": "ELEVATE (Startup Karnataka) Grant",
+    "oneLiner": "Karnataka's flagship pitch program with grants up to ₹50 lakh for innovative startups.",
+    "summary": "ELEVATE is Startup Karnataka's grant challenge. Selected startups pitch to expert panels and win grant funding of up to ₹50 lakh (VERIFY) plus mentoring and state ecosystem support.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "state": "Karnataka",
+      "notes": "For startups registered in Karnataka (or willing to register there) (VERIFY). Calls open in rounds announced on the Startup Karnataka portal."
+    },
+    "eligibilityPlain": "Innovative startups registered in Karnataka — applications open when a new ELEVATE call is announced.",
+    "benefit": "Grant funding up to ₹50 lakh (VERIFY), mentoring, and access to Karnataka's startup ecosystem programs.",
+    "howToApply": [
+      "Register your startup on the Startup Karnataka portal.",
+      "Apply when an ELEVATE call opens, with your pitch deck.",
+      "Clear screening and pitch to the evaluation panel.",
+      "If selected, complete documentation and receive the grant in tranches."
+    ],
+    "documentsRequired": [
+      "Karnataka registration / incorporation documents",
+      "Pitch deck",
+      "Founder KYC"
+    ],
+    "deadline": "annual calls — check portal for the current round (VERIFY)",
+    "officialUrl": "https://www.missionstartupkarnataka.org",
+    "sourceVerifiedDate": null,
+    "tags": ["funding", "grant", "state", "karnataka"]
+  },
+  {
+    "id": "birac-big",
+    "category": "funding",
+    "name": "BIRAC Biotechnology Ignition Grant (BIG)",
+    "oneLiner": "Up to ₹50 lakh for biotech and healthtech ideas at the proof-of-concept stage.",
+    "summary": "BIG is India's largest early-stage biotech grant. It funds individual innovators and young startups working on biotech, medtech and healthcare ideas with up to ₹50 lakh over 18 months (VERIFY) — no equity taken.",
+    "eligibility": {
+      "stage": ["idea", "registered"],
+      "sector": ["healthtech", "deeptech"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Open to individual entrepreneurs and startups with a biotech/medtech/life-sciences innovation at idea-to-PoC stage; incorporation conditions apply for disbursal (VERIFY)."
+    },
+    "eligibilityPlain": "Biotech, medtech or healthtech innovators at idea or proof-of-concept stage — even before full incorporation.",
+    "benefit": "Grant of up to ₹50 lakh over 18 months (VERIFY), mentoring through BIG partners, and no equity dilution.",
+    "howToApply": [
+      "Watch for the BIG call announcement (usually twice a year — VERIFY).",
+      "Apply online with your research/product proposal.",
+      "Clear eligibility screening and technical evaluation.",
+      "Pitch to the expert selection committee.",
+      "Sign the grant agreement with a BIG partner and receive milestone-based funds."
+    ],
+    "documentsRequired": [
+      "Detailed project proposal",
+      "Applicant/founder credentials",
+      "Incorporation documents (if a company)"
+    ],
+    "deadline": "two calls per year (VERIFY) — check the BIRAC portal",
+    "officialUrl": "https://www.birac.nic.in",
+    "sourceVerifiedDate": null,
+    "tags": ["funding", "grant", "biotech", "healthtech", "deeptech"]
+  },
+  {
+    "id": "sine-iit-bombay",
+    "category": "incubator",
+    "name": "SINE, IIT Bombay",
+    "oneLiner": "One of India's oldest deep-tech incubators, on the IIT Bombay campus.",
+    "summary": "The Society for Innovation and Entrepreneurship (SINE) at IIT Bombay incubates technology startups. Incubatees get office space, labs, mentoring, and access to seed funds and government programs like NIDHI and SISFS.",
+    "eligibility": {
+      "stage": ["idea", "registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Tech-led startups preferred; no IIT affiliation required (VERIFY). Selection through application and pitch to SINE's committee."
+    },
+    "eligibilityPlain": "Technology startups at any early stage — you don't need to be from IIT to apply.",
+    "benefit": "Workspace at IIT Bombay, lab access, mentoring, credibility, and eligibility for seed support channelled through SINE (NIDHI, SISFS and its own funds — VERIFY).",
+    "howToApply": [
+      "Fill the incubation application on the SINE website.",
+      "Clear the screening round.",
+      "Pitch to the SINE selection committee.",
+      "Sign the incubation agreement (may include a small equity/fee component — VERIFY)."
+    ],
+    "documentsRequired": [
+      "Pitch deck",
+      "Founder profiles",
+      "Incorporation documents (if registered)"
+    ],
+    "deadline": "rolling",
+    "officialUrl": "https://www.sineiitb.org",
+    "sourceVerifiedDate": null,
+    "tags": ["incubator", "iit", "deeptech", "mumbai"]
+  },
+  {
+    "id": "t-hub",
+    "category": "incubator",
+    "name": "T-Hub, Hyderabad",
+    "oneLiner": "One of the world's largest innovation campuses, backed by the Telangana government.",
+    "summary": "T-Hub runs incubation and acceleration programs connecting startups with corporates, investors and government. Programs range from early-stage incubation to corporate innovation challenges across sectors.",
+    "eligibility": {
+      "stage": ["idea", "registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Different programs have different criteria; many are sector-agnostic. Physical presence in Hyderabad helps but remote participation exists for some programs (VERIFY)."
+    },
+    "eligibilityPlain": "Startups at any stage — pick the T-Hub program that matches where you are.",
+    "benefit": "Structured incubation/acceleration, corporate and investor connects, mentoring, and workspace on the T-Hub campus.",
+    "howToApply": [
+      "Browse open programs on the T-Hub website.",
+      "Apply to the program that fits your stage and sector.",
+      "Clear the screening interviews / pitch rounds.",
+      "Join the cohort and complete the program milestones."
+    ],
+    "documentsRequired": [
+      "Pitch deck",
+      "Founder profiles",
+      "Product demo (if available)"
+    ],
+    "deadline": "rolling — program cohorts open through the year",
+    "officialUrl": "https://t-hub.co",
+    "sourceVerifiedDate": null,
+    "tags": ["incubator", "accelerator", "telangana", "hyderabad"]
+  },
+  {
+    "id": "atal-incubation-centres",
+    "category": "incubator",
+    "name": "Atal Incubation Centres (AIC)",
+    "oneLiner": "A national network of 60+ government-backed incubators across India — likely one near you.",
+    "summary": "NITI Aayog's Atal Innovation Mission funds incubation centres across universities and institutions in India. AICs support early startups with workspace, mentoring and sometimes seed support, in cities beyond the big metros too.",
+    "eligibility": {
+      "stage": ["idea", "registered"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Each AIC selects its own cohorts; many have sector themes (agritech, health, manufacturing). Find the nearest AIC on the AIM website."
+    },
+    "eligibilityPlain": "Idea and early-stage startups anywhere in India — apply to the AIC closest to you or in your sector.",
+    "benefit": "Subsidised incubation, mentoring, maker facilities, and access to Atal Innovation Mission events and grants (VERIFY at each centre).",
+    "howToApply": [
+      "Find AICs near you or in your sector on the AIM website.",
+      "Apply directly to that AIC's incubation program.",
+      "Pitch to the centre's selection panel.",
+      "Sign the incubation agreement and onboard."
+    ],
+    "documentsRequired": [
+      "Pitch deck or idea note",
+      "Founder profiles",
+      "Incorporation documents (if registered)"
+    ],
+    "deadline": "rolling — varies by centre",
+    "officialUrl": "https://aim.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["incubator", "aim", "niti-aayog", "national"]
+  },
+  {
+    "id": "national-startup-awards",
+    "category": "competition",
+    "name": "National Startup Awards",
+    "oneLiner": "DPIIT's flagship annual awards — cash prize, national recognition, and investor visibility.",
+    "summary": "The National Startup Awards recognise outstanding startups across sectors each year. Winners get a cash prize of ₹10 lakh (VERIFY), handholding for government pilots, and huge credibility with investors and customers.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": true,
+      "maxAgeYears": 10,
+      "notes": "DPIIT-recognised startups with an incorporated entity; product must be beyond idea stage with traction (VERIFY). Categories change each edition."
+    },
+    "eligibilityPlain": "DPIIT-recognised startups with a live product and some traction, in any of the award categories.",
+    "benefit": "₹10 lakh cash prize per winning startup (VERIFY), national recognition, and priority access to government programs and pilots.",
+    "howToApply": [
+      "Watch for the annual call on the Startup India portal.",
+      "Pick the category that fits your startup.",
+      "Fill the detailed application with traction metrics and impact.",
+      "Clear jury evaluation rounds (may include a pitch).",
+      "Attend the award ceremony if selected."
+    ],
+    "documentsRequired": [
+      "DPIIT recognition certificate",
+      "Traction/impact metrics",
+      "Financial statements",
+      "Product demo video (VERIFY)"
+    ],
+    "deadline": "annual cycle — check the portal for this year's dates (VERIFY)",
+    "officialUrl": "https://www.startupindia.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["competition", "award", "dpiit", "national"]
+  },
+  {
+    "id": "nidhi-prayas",
+    "category": "competition",
+    "name": "NIDHI PRAYAS Prototype Grant",
+    "oneLiner": "Up to ₹10 lakh to turn your idea into a physical prototype — no company needed yet.",
+    "summary": "PRAYAS (Promoting and Accelerating Young and Aspiring innovators & Startups) funds innovators to build hardware prototypes. Selected applicants get up to ₹10 lakh (VERIFY) plus lab access through a PRAYAS centre.",
+    "eligibility": {
+      "stage": ["idea", "registered"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Aimed at innovators with a physical/hardware prototype idea (VERIFY); apply through a NIDHI PRAYAS centre (usually hosted at incubators)."
+    },
+    "eligibilityPlain": "Individual innovators or very early startups that need money to build a hardware prototype.",
+    "benefit": "Grant up to ₹10 lakh (VERIFY) for prototype development, plus fab-lab access and mentoring at a PRAYAS centre.",
+    "howToApply": [
+      "Find a NIDHI PRAYAS centre near you (hosted at technology business incubators).",
+      "Apply with your idea and prototype plan when the centre's call opens.",
+      "Pitch to the centre's selection committee.",
+      "Build your prototype at the centre with milestone-based grant support."
+    ],
+    "documentsRequired": [
+      "Idea / prototype proposal",
+      "Applicant KYC",
+      "Budget estimate for the prototype"
+    ],
+    "deadline": "rolling — depends on each PRAYAS centre's call (VERIFY)",
+    "officialUrl": "https://nidhi.dst.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["competition", "grant", "prototype", "hardware", "dst"]
+  },
+  {
+    "id": "incorporate-company",
+    "category": "process",
+    "name": "How to incorporate your company (SPICe+)",
+    "oneLiner": "Register a private limited company fully online through the MCA's SPICe+ form.",
+    "summary": "SPICe+ is the government's single online form that bundles company name reservation, incorporation, PAN, TAN, EPFO, ESIC and more. Most founders complete it with a CA/CS in 1-2 weeks (VERIFY).",
+    "eligibility": {
+      "stage": ["idea"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Need at least 2 directors/shareholders for a private limited company (1 for OPC) and a registered office address in India (VERIFY)."
+    },
+    "eligibilityPlain": "Anyone starting up — you need directors, an office address, and identity documents.",
+    "benefit": "A registered private limited company (or LLP/OPC) — the legal foundation required for DPIIT recognition, funding and most schemes.",
+    "howToApply": [
+      "Get Digital Signature Certificates (DSC) for all directors.",
+      "Reserve your company name via SPICe+ Part A on the MCA portal.",
+      "Fill SPICe+ Part B with directors, capital and registered office details.",
+      "Attach MoA and AoA (e-MoA/e-AoA) and submit with fees.",
+      "Receive the Certificate of Incorporation with PAN and TAN included."
+    ],
+    "documentsRequired": [
+      "Director PAN, Aadhaar and address proofs",
+      "Registered office proof (utility bill + NOC)",
+      "MoA and AoA",
+      "Digital Signature Certificates"
+    ],
+    "deadline": "rolling",
+    "officialUrl": "https://www.mca.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["process", "incorporation", "mca", "spice+"]
+  },
+  {
+    "id": "get-dpiit-recognised",
+    "category": "process",
+    "name": "How to get DPIIT recognised (step-by-step)",
+    "oneLiner": "The exact steps from a registered company to holding a DPIIT recognition certificate.",
+    "summary": "DPIIT recognition is a short online application, but founders often get rejected for a weak innovation write-up. This guide walks through the process and what reviewers look for.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": 10,
+      "notes": "Same criteria as DPIIT recognition itself: entity under 10 years old, turnover under ₹100 crore (VERIFY), working on innovation."
+    },
+    "eligibilityPlain": "Registered companies/LLPs that want the DPIIT startup badge and the benefits that come with it.",
+    "benefit": "A clear path to the certificate that unlocks tax exemption, seed funding, IPR rebates and easier compliance.",
+    "howToApply": [
+      "Register on the Startup India portal with your company details.",
+      "Open the 'Get Recognised' application.",
+      "Describe your innovation: what problem, what's new, and how it scales — be specific.",
+      "Upload the certificate of incorporation and any supporting material (deck, website, patents).",
+      "Submit and track the application; respond quickly if clarification is sought.",
+      "Download your recognition certificate once approved."
+    ],
+    "documentsRequired": [
+      "Certificate of incorporation",
+      "PAN",
+      "Innovation write-up or pitch deck",
+      "Website / product links (optional but helpful)"
+    ],
+    "deadline": "rolling",
+    "officialUrl": "https://www.startupindia.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["process", "dpiit", "recognition", "guide"]
+  },
+  {
+    "id": "gst-registration",
+    "category": "process",
+    "name": "How to register for GST",
+    "oneLiner": "Get your GSTIN online — mandatory once you cross turnover limits or sell across states.",
+    "summary": "GST registration is required when turnover crosses ₹40 lakh for goods or ₹20 lakh for services (VERIFY), or immediately if you sell inter-state or on e-commerce platforms. Registration is free and done on the GST portal.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Thresholds differ by state and category (VERIFY). E-commerce sellers and inter-state suppliers must register regardless of turnover (VERIFY)."
+    },
+    "eligibilityPlain": "Businesses crossing the turnover thresholds, selling across state lines, or selling on e-commerce platforms.",
+    "benefit": "A GSTIN that lets you legally collect GST, claim input tax credit on purchases, and sell on marketplaces.",
+    "howToApply": [
+      "Go to the GST portal and start a new registration (Form REG-01).",
+      "Verify your PAN, mobile and email with OTPs.",
+      "Fill business details, promoters, and principal place of business.",
+      "Upload documents and submit with Aadhaar e-verification.",
+      "Receive your GSTIN and download the registration certificate."
+    ],
+    "documentsRequired": [
+      "Company PAN and incorporation certificate",
+      "Promoter/director PAN and Aadhaar",
+      "Business address proof",
+      "Bank account details",
+      "Photographs of promoters"
+    ],
+    "deadline": "rolling (register within 30 days of becoming liable — VERIFY)",
+    "officialUrl": "https://www.gst.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["process", "gst", "tax", "registration"]
+  },
+  {
+    "id": "mca-annual-filings",
+    "category": "compliance",
+    "name": "Annual MCA/ROC filings (AOC-4 & MGT-7)",
+    "oneLiner": "The two filings every private limited company must make each year — miss them and penalties add up daily.",
+    "summary": "Every company must file its financial statements (AOC-4) within 30 days and its annual return (MGT-7/7A) within 60 days of the AGM (VERIFY). Late filing costs ₹100 per day per form with no upper cap (VERIFY).",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Applies to all registered companies regardless of revenue — even zero-revenue startups must file. Small companies/OPCs use MGT-7A (VERIFY)."
+    },
+    "eligibilityPlain": "Every registered company, every year — even if you made no revenue.",
+    "benefit": "Staying compliant keeps your company in good standing, avoids daily penalties and director disqualification, and keeps you fundable.",
+    "howToApply": [
+      "Close your books and get financial statements audited.",
+      "Hold your Annual General Meeting (AGM) within the statutory deadline.",
+      "File AOC-4 (financials) within 30 days of the AGM (VERIFY).",
+      "File MGT-7 or MGT-7A (annual return) within 60 days of the AGM (VERIFY).",
+      "Keep the filing acknowledgements with your records."
+    ],
+    "documentsRequired": [
+      "Audited financial statements",
+      "Board and AGM resolutions",
+      "Shareholding details",
+      "Director details"
+    ],
+    "deadline": "annual — tied to your AGM date (VERIFY)",
+    "officialUrl": "https://www.mca.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["compliance", "mca", "roc", "annual-filing"]
+  },
+  {
+    "id": "gst-returns",
+    "category": "compliance",
+    "name": "GST returns (GSTR-1 & GSTR-3B)",
+    "oneLiner": "Monthly or quarterly returns every GST-registered business must file — even with zero sales.",
+    "summary": "Once you have a GSTIN you must file GSTR-1 (sales details) and GSTR-3B (summary + tax payment) monthly, or quarterly under the QRMP scheme if turnover is under ₹5 crore (VERIFY). Nil returns are mandatory too.",
+    "eligibility": {
+      "stage": ["operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Applies to every GST-registered business. Due dates: GSTR-1 by the 11th, GSTR-3B by the 20th of the following month (VERIFY); QRMP has quarterly dates."
+    },
+    "eligibilityPlain": "Every GST-registered business — file even in months with no sales.",
+    "benefit": "Staying compliant avoids late fees and interest, keeps your input tax credit flowing, and prevents GSTIN suspension.",
+    "howToApply": [
+      "Log in to the GST portal each period.",
+      "Upload outward supplies (sales invoices) in GSTR-1.",
+      "File GSTR-3B, pay tax due after adjusting input credit.",
+      "Opt into QRMP if eligible and you prefer quarterly filing (VERIFY).",
+      "Reconcile with GSTR-2B monthly so you don't lose input credit."
+    ],
+    "documentsRequired": [
+      "Sales invoices for the period",
+      "Purchase invoices (for input credit)",
+      "GST portal login credentials"
+    ],
+    "deadline": "monthly (or quarterly under QRMP) — GSTR-1 by the 11th, GSTR-3B by the 20th (VERIFY)",
+    "officialUrl": "https://www.gst.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["compliance", "gst", "returns", "tax"]
+  },
+  {
+    "id": "post-funding-compliance",
+    "category": "compliance",
+    "name": "Post-fundraise filings (PAS-3, valuation & registers)",
+    "oneLiner": "The paperwork you must complete after money hits your bank account in an equity round.",
+    "summary": "Raising a round triggers compliance: a valuation report before allotment, share allotment within 60 days of receiving money (VERIFY), filing Form PAS-3 with the ROC within 15 days of allotment (VERIFY), and updating your statutory registers.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Applies to any private placement / preferential allotment of shares. Foreign investment adds FEMA/RBI filings like FC-GPR within 30 days (VERIFY)."
+    },
+    "eligibilityPlain": "Any startup that has just raised equity funding — deadlines start the day investor money arrives.",
+    "benefit": "Clean compliance protects you in future due diligence — messy allotment paperwork is a common reason funding rounds get delayed.",
+    "howToApply": [
+      "Get a valuation report from a registered valuer before the round closes (VERIFY).",
+      "Pass a board/shareholder resolution approving the allotment.",
+      "Allot shares within 60 days of receiving funds (VERIFY).",
+      "File Form PAS-3 with the ROC within 15 days of allotment (VERIFY).",
+      "Update the register of members and issue share certificates within 2 months (VERIFY).",
+      "If the investor is foreign, file FC-GPR with the RBI within 30 days of allotment (VERIFY)."
+    ],
+    "documentsRequired": [
+      "Valuation report",
+      "Board and shareholder resolutions",
+      "List of allottees",
+      "Bank statement showing receipt of funds"
+    ],
+    "deadline": "event-based — deadlines run from receipt of funds and allotment (VERIFY)",
+    "officialUrl": "https://www.mca.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["compliance", "fundraise", "pas-3", "mca", "fema"]
+  },
+  {
+    "id": "udyam-registration",
+    "category": "benefit",
+    "name": "Udyam (MSME) Registration",
+    "oneLiner": "A free 10-minute registration that unlocks MSME benefits like priority lending and delayed-payment protection.",
+    "summary": "Most startups also qualify as MSMEs. Udyam registration is free, instant and Aadhaar-based, and opens up priority-sector lending, collateral-free CGTMSE-backed loans (VERIFY), and legal protection against delayed payments from buyers.",
+    "eligibility": {
+      "stage": ["registered", "operating"],
+      "sector": ["any"],
+      "dpiitRequired": false,
+      "maxAgeYears": null,
+      "notes": "Classified by investment and turnover limits (micro/small/medium) (VERIFY). Can be held alongside DPIIT recognition."
+    },
+    "eligibilityPlain": "Almost every startup within MSME investment and turnover limits — it takes minutes and costs nothing.",
+    "benefit": "Priority-sector bank lending, collateral-free loans via CGTMSE (VERIFY), protection under the delayed-payment rules (buyers must pay within 45 days — VERIFY), and access to MSME schemes and tenders.",
+    "howToApply": [
+      "Go to the Udyam registration portal.",
+      "Verify with the proprietor/director's Aadhaar OTP.",
+      "Enter PAN and business details — investment/turnover is auto-fetched from IT/GST records.",
+      "Submit and download your Udyam certificate instantly."
+    ],
+    "documentsRequired": [
+      "Aadhaar of proprietor/director",
+      "Company PAN",
+      "GSTIN (if registered)"
+    ],
+    "deadline": "rolling",
+    "officialUrl": "https://udyamregistration.gov.in",
+    "sourceVerifiedDate": null,
+    "tags": ["benefit", "msme", "udyam", "lending"]
+  }
+]

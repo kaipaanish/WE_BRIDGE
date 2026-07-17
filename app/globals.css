@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #191a47;
+  --color-coral: #ff6a4d;
+  --color-gold: #f4b740;
+  --color-violet: #7b61ff;
+  --color-pink: #ff4d8d;
+  --color-mint: #10cba0;
+  --color-cream: #f6f6fc;
+  --color-ink: #20223f;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: var(--color-coral);
+    color: #fff;
+  }
+  /* Consistent bright focus ring for keyboard users. */
+  :focus-visible {
+    outline: 2px solid var(--color-violet);
+    outline-offset: 2px;
+  }
+}
+
+/* --- Motion ------------------------------------------------------------- */
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -40px) scale(1.12);
+  }
+  66% {
+    transform: translate(-24px, 22px) scale(0.94);
+  }
+}
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 20s ease-in-out infinite;
+}
+.animate-floaty {
+  animation: floaty 5s ease-in-out infinite;
+}
+.animate-fade-up {
+  animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.animate-pop {
+  animation: popIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* --- Reusable helpers --------------------------------------------------- */
+/* Vibrant text for headline accents. */
+.gradient-text {
+  background-image: linear-gradient(115deg, #ff6a4d, #ff4d8d 45%, #7b61ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* Primary CTA fill — warm coral -> pink, with a glow on hover. */
+.btn-gradient {
+  background-image: linear-gradient(135deg, #ff6a4d, #ff4d8d);
+  color: #fff;
+  box-shadow: 0 12px 30px -10px rgba(255, 77, 141, 0.55);
+  transition:
+    transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 18px 40px -10px rgba(255, 77, 141, 0.6);
+}
+.btn-gradient:active {
+  transform: translateY(0);
+}
+/* Frosted panel over the aurora. */
+.glass {
+  background: rgba(255, 255, 255, 0.66);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+/* Soft, elevated card shadow that feels light rather than heavy. */
+.shadow-soft {
+  box-shadow: 0 18px 50px -24px rgba(32, 34, 63, 0.28);
+}
+/* Card that lifts and glows on hover. */
+.card-hover {
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 55px -22px rgba(123, 97, 255, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-blob,
+  .animate-floaty,
+  .animate-fade-up,
+  .animate-pop {
+    animation: none;
+  }
+  .btn-gradient,
+  .card-hover {
+    transition: none;
+  }
+}

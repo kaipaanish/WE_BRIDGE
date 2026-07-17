@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Kicks Reborn",
+    "backstory": "A registered sustainable-sneaker brand in Mumbai making shoes from recycled ocean plastic, not yet DPIIT-recognised, looking for seed money to scale production.",
+    "stage": "registered",
+    "sector": "consumer",
+    "dpiitRecognized": false,
+    "state": "Maharashtra",
+    "fundingNeed": "seed"
+  },
+  {
+    "name": "AgriSense",
+    "backstory": "A DPIIT-recognised agritech startup in Bengaluru selling soil-sensor kits to farmers for two years, hunting for non-dilutive grants to expand to new districts.",
+    "stage": "operating",
+    "sector": "agritech",
+    "dpiitRecognized": true,
+    "state": "Karnataka",
+    "fundingNeed": "grant"
+  },
+  {
+    "name": "MediQueue",
+    "backstory": "Two doctors in Hyderabad with an idea for an OPD queue-management app — nothing registered yet, just exploring what support exists before quitting their jobs.",
+    "stage": "idea",
+    "sector": "healthtech",
+    "dpiitRecognized": false,
+    "state": "Telangana",
+    "fundingNeed": "none"
+  },
+  {
+    "name": "LearnLoop",
+    "backstory": "A DPIIT-recognised edtech company in Delhi with 40,000 paying students, preparing to raise a proper VC round and wanting to get compliance in order first.",
+    "stage": "operating",
+    "sector": "edtech",
+    "dpiitRecognized": true,
+    "state": "Delhi",
+    "fundingNeed": "equity"
+  }
+]
