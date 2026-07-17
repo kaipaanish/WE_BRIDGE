@@ -7,6 +7,7 @@ import ActionPlan from "@/components/ActionPlan";
 import AskAssistant from "@/components/AskAssistant";
 import Aurora from "@/components/Aurora";
 import DashboardBrief from "@/components/DashboardBrief";
+import Reveal from "@/components/Reveal";
 import SchemeCard from "@/components/SchemeCard";
 import { schemes } from "@/lib/data";
 import { scoreEntries } from "@/lib/match";
@@ -138,65 +139,75 @@ export default function DashboardPage() {
           <>
             <DashboardBrief profile={profile} />
 
-            <ActionPlan steps={plan} />
+            <Reveal>
+              <ActionPlan steps={plan} />
+            </Reveal>
 
             {top.length > 0 && (
-              <section className="mt-12">
-                <h2 className="text-xl font-bold">Top matches for you</h2>
-                <p className="mt-1 text-sm text-ink/60">
-                  Ranked by how well each fits your profile.
-                </p>
-                <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                  {top.map((s) => (
-                    <SchemeCard
-                      key={s.entry.id}
-                      entry={s.entry}
-                      reasons={s.reasons}
-                    />
-                  ))}
-                </div>
-              </section>
+              <Reveal>
+                <section className="mt-12">
+                  <h2 className="text-xl font-bold">Top matches for you</h2>
+                  <p className="mt-1 text-sm text-ink/60">
+                    Ranked by how well each fits your profile.
+                  </p>
+                  <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    {top.map((s) => (
+                      <SchemeCard
+                        key={s.entry.id}
+                        entry={s.entry}
+                        reasons={s.reasons}
+                      />
+                    ))}
+                  </div>
+                </section>
+              </Reveal>
             )}
 
             {restGroups.map((group) => (
-              <section key={group.category} className="mt-12">
-                <div className="flex items-baseline gap-3">
-                  <h2 className="text-xl font-bold">
-                    {CATEGORY_LABELS[group.category]}
-                  </h2>
-                  <span className="text-sm text-ink/50">{group.items.length}</span>
-                </div>
-                <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                  {group.items.map((s) => (
-                    <SchemeCard
-                      key={s.entry.id}
-                      entry={s.entry}
-                      reasons={s.reasons}
-                    />
-                  ))}
-                </div>
-              </section>
+              <Reveal key={group.category}>
+                <section className="mt-12">
+                  <div className="flex items-baseline gap-3">
+                    <h2 className="text-xl font-bold">
+                      {CATEGORY_LABELS[group.category]}
+                    </h2>
+                    <span className="text-sm text-ink/50">
+                      {group.items.length}
+                    </span>
+                  </div>
+                  <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    {group.items.map((s) => (
+                      <SchemeCard
+                        key={s.entry.id}
+                        entry={s.entry}
+                        reasons={s.reasons}
+                      />
+                    ))}
+                  </div>
+                </section>
+              </Reveal>
             ))}
 
             {locked.length > 0 && (
-              <section className="mt-12">
-                <div className="flex items-baseline gap-3">
-                  <h2 className="text-xl font-bold">
-                    Unlocks after DPIIT recognition
-                  </h2>
-                  <span className="text-sm text-ink/50">{locked.length}</span>
-                </div>
-                <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                  {locked.map((s) => (
-                    <SchemeCard
-                      key={s.entry.id}
-                      entry={s.entry}
-                      locked
-                      reasons={s.reasons}
-                    />
-                  ))}
-                </div>
-              </section>
+              <Reveal>
+                <section className="mt-12">
+                  <div className="flex items-baseline gap-3">
+                    <h2 className="text-xl font-bold">
+                      Unlocks after DPIIT recognition
+                    </h2>
+                    <span className="text-sm text-ink/50">{locked.length}</span>
+                  </div>
+                  <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    {locked.map((s) => (
+                      <SchemeCard
+                        key={s.entry.id}
+                        entry={s.entry}
+                        locked
+                        reasons={s.reasons}
+                      />
+                    ))}
+                  </div>
+                </section>
+              </Reveal>
             )}
           </>
         )}

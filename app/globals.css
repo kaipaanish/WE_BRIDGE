@@ -136,6 +136,20 @@
   box-shadow: 0 24px 55px -22px rgba(123, 97, 255, 0.35);
 }
 
+/* Scroll-reveal — driven by components/Reveal.tsx. Hidden until the element
+   scrolls into view, then eases up into place. */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-shown {
+  opacity: 1;
+  transform: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -148,6 +162,12 @@
   }
   .btn-gradient,
   .card-hover {
+    transition: none;
+  }
+  /* Reveal renders visible immediately in JS too, but guard the CSS anyway. */
+  .reveal {
+    opacity: 1;
+    transform: none;
     transition: none;
   }
 }
