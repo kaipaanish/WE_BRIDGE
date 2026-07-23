@@ -13,11 +13,33 @@ import { loadSwipes, saveSwipes } from "@/lib/store";
 import {
   CATEGORY_LABELS,
   CATEGORY_ORDER,
+  type Category,
   type Entry,
   type UserProfile,
 } from "@/lib/types";
 
 type DeckItem = { entry: Entry; locked: boolean };
+
+// Makes it instantly obvious what the current deck is about.
+const CATEGORY_ICONS: Record<Category, string> = {
+  recognition: "🏅",
+  benefit: "🎁",
+  funding: "💰",
+  incubator: "🏢",
+  competition: "🏆",
+  process: "🧭",
+  compliance: "📋",
+};
+
+const CATEGORY_BLURBS: Record<Category, string> = {
+  recognition: "Official startup status that unlocks other benefits.",
+  benefit: "Tax breaks, rebates and perks you can claim.",
+  funding: "Grants, seed money and loans for your startup.",
+  incubator: "Places that take you in, mentor you and give you space.",
+  competition: "Pitch challenges and awards with prizes.",
+  process: "Step-by-step how-tos for the essentials.",
+  compliance: "The filings you need to keep up with.",
+};
 
 export default function SwipePage() {
   const router = useRouter();
@@ -61,6 +83,12 @@ export default function SwipePage() {
         .map((s) => ({ entry: s.entry, locked: s.locked })),
     );
   }, [profile]);
+
+  // Distinct categories present, in canonical order — for the "category X of Y".
+  const deckCategories = useMemo(
+    () => CATEGORY_ORDER.filter((c) => deck.some((d) => d.entry.category === c)),
+    [deck],
+  );
 
   // On first load, resume at the first not-yet-decided card so revisiting
   // /swipe doesn't force the user to replay everything. Runs once.
@@ -143,6 +171,9 @@ export default function SwipePage() {
   const catPos = current
     ? catItems.findIndex((d) => d.entry.id === current.entry.id) + 1
     : 0;
+  const catIndex = current
+    ? deckCategories.indexOf(current.entry.category) + 1
+    : 0;
 
   return (
     <main className="relative flex min-h-screen flex-col overflow-hidden">
@@ -192,14 +223,36 @@ export default function SwipePage() {
           </div>
         ) : (
           <>
+            {/* category banner — re-pops each time the category changes so
+                it's impossible to miss what you're swiping for */}
+            <div
+              key={current.entry.category}
+              className="animate-pop mb-4 flex items-center gap-3 rounded-2xl border border-violet/20 bg-gradient-to-br from-violet/10 to-fuchsia/10 p-4 shadow-soft backdrop-blur"
+            >
+              <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-violet to-fuchsia text-3xl shadow-soft">
+                {CATEGORY_ICONS[current.entry.category]}
+              </span>
+              <div className="min-w-0 flex-1">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-violet">
+                  Swiping for · {catIndex} of {deckCategories.length}
+                </p>
+                <h2 className="text-2xl font-extrabold leading-tight tracking-tight">
+                  {CATEGORY_LABELS[current.entry.category]}
+                </h2>
+                <p className="mt-0.5 text-xs text-ink/60">
+                  {CATEGORY_BLURBS[current.entry.category]}
+                </p>
+              </div>
+            </div>
+
             {/* progress */}
             <div className="mb-5">
-              <div className="flex items-center justify-between text-sm">
-                <span className="font-bold text-violet">
-                  {CATEGORY_LABELS[current.entry.category]}
+              <div className="flex items-center justify-between text-xs text-ink/50">
+                <span>
+                  Card {catPos} of {catItems.length} in this group
                 </span>
-                <span className="text-ink/50">
-                  {index + 1} of {deck.length} · saved {liked.length}
+                <span>
+                  {index + 1}/{deck.length} overall · saved {liked.length}
                 </span>
               </div>
               <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-ink/10">
@@ -208,10 +261,6 @@ export default function SwipePage() {
                   style={{ width: `${((index + 1) / deck.length) * 100}%` }}
                 />
               </div>
-              <p className="mt-1.5 text-xs text-ink/45">
-                {CATEGORY_LABELS[current.entry.category]} · card {catPos} of{" "}
-                {catItems.length}
-              </p>
             </div>
 
             {/* card stack */}
