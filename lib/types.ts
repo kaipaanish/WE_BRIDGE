@@ -84,6 +84,53 @@ export interface PlanStep {
   status: "now" | "next" | "locked";
 }
 
+// --- v2: roles, swipe, mentors, pitches -----------------------------------
+
+export type Role = "founder" | "mentor";
+
+/** Right/left swipe decisions across the scheme decks, persisted locally. */
+export interface SwipeState {
+  liked: string[]; // entry ids swiped right
+  passed: string[]; // entry ids swiped left
+}
+
+/** A demo mentor a founder can be matched with and pitch to. */
+export interface Mentor {
+  id: string;
+  name: string;
+  initials: string;
+  avatarGradient: string; // tailwind gradient classes, e.g. "from-violet to-fuchsia"
+  headline: string; // one-line credibility hook
+  location: string;
+  sectors: (Sector | "any")[];
+  stages: Stage[];
+  helpsWith: Category[]; // scheme areas they mentor on
+  fundingFocus: UserProfile["fundingNeed"][];
+  expertise: string[];
+  bio: string;
+}
+
+export type PitchStatus = "sent" | "accepted" | "declined";
+
+/** A founder's pitch to a mentor (400-word limit), plus the mentor's reply. */
+export interface Pitch {
+  id: string;
+  mentorId: string;
+  founderName: string;
+  profile: UserProfile;
+  text: string;
+  createdAt: number;
+  status: PitchStatus;
+  reply?: string;
+}
+
+/** A mentor scored against a founder's profile + saved schemes. */
+export interface ScoredMentor {
+  mentor: Mentor;
+  score: number;
+  reasons: string[];
+}
+
 /**
  * A profile the AI derived from a free-text description, plus which fields it
  * had to guess because the description didn't say. Guessed fields are flagged

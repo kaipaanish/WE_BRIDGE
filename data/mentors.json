@@ -1,0 +1,72 @@
+[
+  {
+    "id": "priya-nair",
+    "name": "Priya Nair",
+    "initials": "PN",
+    "avatarGradient": "from-violet to-fuchsia",
+    "headline": "Ex-fintech founder · 2 exits · seed-to-Series-A GTM",
+    "location": "Bengaluru",
+    "sectors": ["fintech", "consumer"],
+    "stages": ["registered", "operating"],
+    "helpsWith": ["funding", "process"],
+    "fundingFocus": ["seed", "equity"],
+    "expertise": ["Go-to-market", "Fundraising", "Unit economics", "Pitch decks"],
+    "bio": "Built and sold two fintech startups. I help founders sharpen their story, get to first revenue, and raise their first institutional round without giving away the farm."
+  },
+  {
+    "id": "arjun-mehta",
+    "name": "Arjun Mehta",
+    "initials": "AM",
+    "avatarGradient": "from-purple to-violet",
+    "headline": "Deep-tech researcher · grants & IP · IIT ecosystem",
+    "location": "Mumbai",
+    "sectors": ["healthtech", "deeptech"],
+    "stages": ["idea", "registered"],
+    "helpsWith": ["funding", "incubator", "recognition"],
+    "fundingFocus": ["grant"],
+    "expertise": ["R&D grants", "BIRAC / DST", "Patents & IP", "Prototyping"],
+    "bio": "20 years in deep-tech R&D. I guide science-led founders through non-dilutive grants (BIRAC, NIDHI), IP protection, and getting into the right incubator."
+  },
+  {
+    "id": "sana-kapoor",
+    "name": "Sana Kapoor",
+    "initials": "SK",
+    "avatarGradient": "from-fuchsia to-purple",
+    "headline": "Ex-VC · impact & agritech · scaled 30+ portfolio startups",
+    "location": "Delhi",
+    "sectors": ["agritech", "consumer", "any"],
+    "stages": ["registered", "operating"],
+    "helpsWith": ["funding", "competition"],
+    "fundingFocus": ["grant", "seed", "equity"],
+    "expertise": ["Investor readiness", "Impact metrics", "State schemes", "Grant challenges"],
+    "bio": "Spent 8 years investing in early-stage impact startups. I help founders position for grants and equity, and win pitch competitions that build credibility."
+  },
+  {
+    "id": "rohan-iyer",
+    "name": "Rohan Iyer",
+    "initials": "RI",
+    "avatarGradient": "from-violet to-purple",
+    "headline": "Company Secretary · incorporation, DPIIT & compliance",
+    "location": "Pune",
+    "sectors": ["any"],
+    "stages": ["idea", "registered", "operating"],
+    "helpsWith": ["recognition", "process", "compliance"],
+    "fundingFocus": ["none", "grant"],
+    "expertise": ["Incorporation", "DPIIT recognition", "ROC filings", "GST & tax"],
+    "bio": "A practising CS who has set up 200+ startups. I make the boring-but-critical stuff — registration, DPIIT, filings — painless so you can focus on building."
+  },
+  {
+    "id": "kavya-reddy",
+    "name": "Kavya Reddy",
+    "initials": "KR",
+    "avatarGradient": "from-purple to-fuchsia",
+    "headline": "Consumer & edtech growth · brand, funnels, fundraising",
+    "location": "Hyderabad",
+    "sectors": ["edtech", "consumer"],
+    "stages": ["operating"],
+    "helpsWith": ["funding", "benefit"],
+    "fundingFocus": ["seed", "equity"],
+    "expertise": ["Growth marketing", "Brand", "Retention", "Series A story"],
+    "bio": "Scaled two consumer brands past a million users. I help operating startups fix their funnels, build a brand investors remember, and raise a proper round."
+  }
+]

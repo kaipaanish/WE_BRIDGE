@@ -4,10 +4,12 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Aurora from "@/components/Aurora";
+import Brand from "@/components/Brand";
 import ProgressDots from "@/components/ProgressDots";
 import { personas, schemes } from "@/lib/data";
 import { scoreEntries } from "@/lib/match";
 import { saveProfile } from "@/lib/profile";
+import { clearPitches, clearSwipes } from "@/lib/store";
 import {
   FUNDING_LABELS,
   INDIAN_STATES,
@@ -156,7 +158,9 @@ export default function OnboardingPage() {
       topNeed: profile.topNeed?.trim() || undefined,
     };
     saveProfile(clean);
-    router.push("/dashboard");
+    clearSwipes(); // fresh shortlist for a fresh profile
+    clearPitches(); // and a clean mentor inbox — no stale pitches from a prior run
+    router.push("/swipe");
   }
 
   async function describeSubmit() {
@@ -197,8 +201,8 @@ export default function OnboardingPage() {
       <main className="relative min-h-screen overflow-hidden px-6 py-10">
       <Aurora />
         <div className="mx-auto flex max-w-xl flex-col gap-6">
-          <Link href="/" className="text-sm font-extrabold tracking-tight">
-            🧭 WeBridge
+          <Link href="/">
+            <Brand />
           </Link>
 
           <div>
@@ -295,8 +299,8 @@ export default function OnboardingPage() {
       <main className="relative min-h-screen overflow-hidden px-6 py-10">
       <Aurora />
         <div className="mx-auto flex max-w-xl flex-col gap-6">
-          <Link href="/" className="text-sm font-extrabold tracking-tight">
-            🧭 WeBridge
+          <Link href="/">
+            <Brand />
           </Link>
 
           <div>
@@ -497,8 +501,8 @@ export default function OnboardingPage() {
       <Aurora />
       <div className="mx-auto flex max-w-xl flex-col gap-8">
         <header className="flex items-center justify-between">
-          <Link href="/" className="text-sm font-extrabold tracking-tight">
-            🧭 WeBridge
+          <Link href="/">
+            <Brand />
           </Link>
           <ProgressDots total={TOTAL_STEPS} current={step} />
         </header>

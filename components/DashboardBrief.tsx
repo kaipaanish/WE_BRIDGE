@@ -47,8 +47,8 @@ export default function DashboardBrief({ profile }: { profile: UserProfile }) {
   if (!brief) return null;
 
   return (
-    <div className="animate-fade-up mt-8 rounded-3xl border border-coral/20 bg-gradient-to-br from-coral/10 via-white/70 to-violet/10 p-5 shadow-soft backdrop-blur">
-      <p className="text-xs font-bold uppercase tracking-wide text-coral">
+    <div className="animate-fade-up mt-8 rounded-3xl border border-violet/20 bg-gradient-to-br from-fuchsia/10 via-white/70 to-violet/10 p-5 shadow-soft backdrop-blur">
+      <p className="text-xs font-bold uppercase tracking-wide text-violet">
         ✨ Your situation
       </p>
       <p className="mt-2 leading-relaxed text-ink/90">{brief}</p>
