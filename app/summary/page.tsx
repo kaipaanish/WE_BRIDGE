@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import ActionPlan from "@/components/ActionPlan";
+import AskAssistant from "@/components/AskAssistant";
 import Aurora from "@/components/Aurora";
 import Brand from "@/components/Brand";
 import DashboardBrief from "@/components/DashboardBrief";
@@ -29,6 +30,7 @@ export default function SummaryPage() {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [liked, setLiked] = useState<string[]>([]);
   const [pitches, setPitches] = useState<Pitch[]>([]);
+  const [showAsk, setShowAsk] = useState(false);
 
   useEffect(() => {
     const p = loadProfile();
@@ -257,6 +259,25 @@ export default function SummaryPage() {
           </>
         )}
       </div>
+
+      {showAsk && (
+        <div className="animate-pop glass fixed bottom-24 right-6 z-40 max-h-[70vh] w-[min(26rem,calc(100vw-3rem))] overflow-y-auto rounded-3xl border border-white/70 p-5 shadow-soft">
+          <h3 className="font-bold">Ask WeBridge AI</h3>
+          <p className="mt-1 text-xs text-ink/60">
+            Answers come only from our curated scheme data.
+          </p>
+          <div className="mt-4">
+            <AskAssistant profile={profile} />
+          </div>
+        </div>
+      )}
+      <button
+        type="button"
+        onClick={() => setShowAsk((v) => !v)}
+        className="btn-gradient fixed bottom-6 right-6 z-40 rounded-full px-5 py-4 font-semibold"
+      >
+        {showAsk ? "✕ Close" : "💬 Ask AI"}
+      </button>
     </main>
   );
 }
