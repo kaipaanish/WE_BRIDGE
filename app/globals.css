@@ -6,9 +6,12 @@
      pointing at the violet/purple family, so existing utility classes across
      the app re-theme to purple with no per-file churn. New code should use
      violet / purple / fuchsia directly. */
+  /* Tuned to the WEBRIDGE logo: light lilac -> violet -> deep royal purple,
+     with no magenta/pink. */
   --color-violet: #7c3aed;
-  --color-purple: #a855f7;
-  --color-fuchsia: #d946ef;
+  --color-purple: #9333ea;
+  --color-fuchsia: #6d28d9; /* now a deep royal purple, not magenta */
+  --color-lilac: #a78bda;
   --color-coral: #7c3aed; /* legacy alias -> violet */
   --color-pink: #a855f7; /* legacy alias -> purple */
   --color-gold: #f4b740; /* warm accent, used for "locked / pending" */
@@ -112,14 +115,14 @@
 /* --- Reusable helpers --------------------------------------------------- */
 /* Vibrant text for headline accents. */
 .gradient-text {
-  background-image: linear-gradient(115deg, #7c3aed, #a855f7 45%, #d946ef);
+  background-image: linear-gradient(115deg, #8b5cf6, #7c3aed 45%, #5b21b6);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-/* Primary CTA fill — violet -> fuchsia, with a glow on hover. */
+/* Primary CTA fill — violet -> deep royal purple, with a glow on hover. */
 .btn-gradient {
-  background-image: linear-gradient(135deg, #7c3aed, #d946ef);
+  background-image: linear-gradient(135deg, #7c3aed, #6d28d9);
   color: #fff;
   box-shadow: 0 12px 30px -10px rgba(124, 58, 237, 0.55);
   transition:

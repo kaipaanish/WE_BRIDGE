@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" fill="none" role="img" aria-label="WEBRIDGE">
+  <defs>
+    <linearGradient id="wbg" x1="50" y1="20" x2="190" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a78bda" />
+      <stop offset="0.55" stop-color="#7c3aed" />
+      <stop offset="1" stop-color="#4c2e8f" />
+    </linearGradient>
+  </defs>
+  <!-- bridge-W mark -->
+  <path d="M52 26 L84 96 L120 44 L156 96 L188 26" stroke="url(#wbg)" stroke-width="19" stroke-linejoin="round" stroke-linecap="round" />
+  <!-- bridge arch over the centre -->
+  <path d="M86 54 Q120 14 154 54" stroke="#4c2e8f" stroke-width="13" stroke-linecap="round" />
+  <!-- wordmark -->
+  <text x="120" y="138" text-anchor="middle" font-family="'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif" font-size="27" font-weight="800" letter-spacing="7" fill="#241a4d">WEBRIDGE</text>
+</svg>
