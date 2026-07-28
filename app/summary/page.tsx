@@ -16,7 +16,13 @@ import { scoreMentors } from "@/lib/mentors";
 import { buildPlan } from "@/lib/plan";
 import { loadProfile } from "@/lib/profile";
 import { addPitch, loadPitches, loadSwipes } from "@/lib/store";
-import type { Pitch, UserProfile } from "@/lib/types";
+import {
+  FUNDING_LABELS,
+  SECTOR_LABELS,
+  STAGE_LABELS,
+  type Pitch,
+  type UserProfile,
+} from "@/lib/types";
 
 export default function SummaryPage() {
   const router = useRouter();
@@ -70,6 +76,23 @@ export default function SummaryPage() {
   );
   const plan = buildPlan(profile, schemes);
 
+  // The onboarding answers, shown back so the founder can see what's driving
+  // these matches (and edit if it's wrong).
+  const profileChips = [
+    STAGE_LABELS[profile.stage],
+    SECTOR_LABELS[profile.sector],
+    profile.state,
+    FUNDING_LABELS[profile.fundingNeed],
+    profile.dpiitRecognized ? "DPIIT recognised ✓" : "Not DPIIT recognised",
+    ...(profile.companyAgeYears != null
+      ? [
+          profile.companyAgeYears === 0
+            ? "under 1 yr old"
+            : `${profile.companyAgeYears} yr old`,
+        ]
+      : []),
+  ];
+
   function handleSend(pitch: Pitch) {
     addPitch(pitch);
     setPitches((prev) => [pitch, ...prev]);
@@ -86,6 +109,12 @@ export default function SummaryPage() {
           <Brand />
         </Link>
         <div className="flex items-center gap-3 text-sm font-medium">
+          <Link
+            href="/onboarding"
+            className="text-ink/60 transition hover:text-ink"
+          >
+            Edit profile
+          </Link>
           <Link href="/swipe" className="text-ink/60 transition hover:text-ink">
             ↺ Re-swipe
           </Link>
@@ -108,6 +137,24 @@ export default function SummaryPage() {
               ? "You haven't saved anything yet."
               : `${ready.length} ready to act on${planned.length ? `, ${planned.length} unlock after DPIIT` : ""}.`}
           </p>
+
+          {/* Your onboarding answers — what's driving these matches. */}
+          <div className="mt-4 flex flex-wrap gap-2">
+            {profileChips.map((chip) => (
+              <span
+                key={chip}
+                className="glass rounded-full border border-white/60 px-3 py-1 text-xs font-medium text-ink/70"
+              >
+                {chip}
+              </span>
+            ))}
+          </div>
+          {profile.topNeed && (
+            <p className="mt-3 text-sm text-ink/60">
+              You told us you need:{" "}
+              <span className="font-medium text-ink">“{profile.topNeed}”</span>
+            </p>
+          )}
         </div>
 
         {likedEntries.length === 0 ? (
