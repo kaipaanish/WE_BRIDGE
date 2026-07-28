@@ -85,6 +85,10 @@ function personaToProfile(p: Persona): UserProfile {
     dpiitRecognized: p.dpiitRecognized,
     state: p.state,
     fundingNeed: p.fundingNeed,
+    // Carry the extras through so a demo persona's stated need enriches the
+    // shortlist, the AI brief and the mentor matches (finish() normalises them).
+    companyAgeYears: p.companyAgeYears ?? null,
+    topNeed: p.topNeed,
   };
 }
 

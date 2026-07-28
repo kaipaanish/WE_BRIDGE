@@ -1,12 +1,13 @@
 [
   {
-    "name": "Kicks Reborn",
-    "backstory": "A registered sustainable-sneaker brand in Mumbai making shoes from recycled ocean plastic, not yet DPIIT-recognised, looking for seed money to scale production.",
-    "stage": "registered",
+    "name": "WeBridge",
+    "backstory": "A student-built platform that helps early-stage Indian founders discover the government schemes, funding and mentors they qualify for — swipe to shortlist, then pitch a mentor. Still just an idea, not registered yet, looking for a grant to build the first version.",
+    "stage": "idea",
     "sector": "consumer",
     "dpiitRecognized": false,
-    "state": "Maharashtra",
-    "fundingNeed": "seed"
+    "state": "All India",
+    "fundingNeed": "grant",
+    "topNeed": "a grant to build our prototype, and a mentor who has built a startup marketplace"
   },
   {
     "name": "AgriSense",
