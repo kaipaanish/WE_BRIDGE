@@ -1,8 +1,8 @@
 [
   {
     "name": "WeBridge",
-    "backstory": "A student-built platform that helps early-stage Indian founders discover the government schemes, funding and mentors they qualify for — swipe to shortlist, then pitch a mentor. Still just an idea, not registered yet, looking for a grant to build the first version.",
-    "stage": "idea",
+    "backstory": "A student-built platform that helps early-stage Indian founders discover the government schemes, funding and mentors they qualify for — swipe to shortlist, then pitch a mentor. Recently registered but not yet DPIIT-recognised, looking for a grant to build out the platform.",
+    "stage": "registered",
     "sector": "consumer",
     "dpiitRecognized": false,
     "state": "All India",
